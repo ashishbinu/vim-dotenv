@@ -14,7 +14,7 @@ Plug 'ashishbinu/vim-dotenv'
 
 ```lua
   {
-    "ashishbinu/vim-dotenv"
+    "ashishbinu/vim-dotenv",
     ft = "dotenv",
   },
 ```
