@@ -15,7 +15,7 @@ syn match dotenvComment "^#.*" contains=@Spell
 syn match dotenvComment "\s#.*"ms=s+1 contains=@Spell
 syn region dotenvString	start=+"+ skip=+\\\\\|\\"+ end=+"+ oneline contained
 syn region dotenvString	start=+'+ skip=+\\\\\|\\'+ end=+'+ oneline contained
-syn match dotenvKey ".\+\(=.*\)\@=" contained
+syn match dotenvKey "[^=]\+\ze=" contained
 syn match dotenvValue "=\@<=\(.\+\)" contains=dotenvString contained
 syn match dotenvKeyValuePair ".\+=.*" contains=dotenvKey,dotenvAssign,dotenvValue
 
