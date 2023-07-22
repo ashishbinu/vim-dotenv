@@ -27,6 +27,7 @@ use "ashishbinu/vim-dotenv"
 
 ## TODO
 
+- [ ] Commenting env value with equal to doesnt make it a comment
 - [ ] Multiline value syntax highlighting.
 
 ## References
