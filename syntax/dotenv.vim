@@ -17,7 +17,7 @@ syn region dotenvString	start=+"+ skip=+\\\\\|\\"+ end=+"+ oneline contained
 syn region dotenvString	start=+'+ skip=+\\\\\|\\'+ end=+'+ oneline contained
 syn match dotenvKey "[^=]\+\ze=" contained
 syn match dotenvValue "=\@<=\(.\+\)" contains=dotenvString contained
-syn match dotenvKeyValuePair ".\+=.*" contains=dotenvKey,dotenvAssign,dotenvValue
+syn match dotenvKeyValuePair "^\s*\w\+\s*=" contains=dotenvKey,dotenvAssign,dotenvValue
 
 hi def link dotenvComment Comment
 hi def link dotenvString String
